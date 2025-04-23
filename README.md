@@ -1,35 +1,28 @@
 # pymongo-api
 
 ## Как запустить
-
-Запускаем mongodb и приложение
-
+Переходим в директорию [mongo-sharding-repl](mongo-sharding-repl)
 ```shell
-docker compose up -d
+cd ./sharding-repl-cache
 ```
 
-Заполняем mongodb данными
+Запускаем mongodb и приложение по инструкции в [README.md](mongo-sharding-repl/README.md)
 
-```shell
-./scripts/mongo-init.sh
-```
 
-## Как проверить
+Файлы диаграмм тестового приложения:
 
-### Если вы запускаете проект на локальной машине
+[task2_hw.drawio](task2_hw.drawio)
+![task2_hw.drawio.png](task2_hw.drawio.png)
 
-Откройте в браузере http://localhost:8080
+[task3_hw.drawio](task3_hw.drawio)
+![task3_hw.drawio.png](task3_hw.drawio.png)
 
-### Если вы запускаете проект на предоставленной виртуальной машине
+[task4_hw.drawio](task4_hw.drawio)
+![task4_hw.drawio.png](task4_hw.drawio.png)
 
-Узнать белый ip виртуальной машины
+[task5_hw.drawio](task5_hw.drawio)
+![task5_hw.drawio.png](task5_hw.drawio.png)
 
-```shell
-curl --silent http://ifconfig.me
-```
+[task6_hw.drawio](task6_hw.drawio)
+![task6_hw.drawio.png](task6_hw.drawio.png)
 
-Откройте в браузере http://<ip виртуальной машины>:8080
-
-## Доступные эндпоинты
-
-Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
